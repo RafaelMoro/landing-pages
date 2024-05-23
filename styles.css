@@ -93,3 +93,31 @@ img {
         background-size: 60rem;
     }
 }
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+}
+.hero__image {
+    width: 30rem;
+    justify-self: center;
+}
+.hero__box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+.hero__title {
+    margin: 0;
+    line-height: 1.2;
+}
+.hero__button {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    border: none;
+    max-width: 20rem;
+}
