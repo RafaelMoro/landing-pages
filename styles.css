@@ -93,6 +93,9 @@ img {
     @media (min-width: 992px) {
         background-size: 60rem;
     }
+    @media (min-width: 1280px) {
+        background-size: 110rem;
+    }
 }
 
 .hero {
