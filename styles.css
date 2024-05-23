@@ -98,6 +98,8 @@ img {
     }
 }
 
+/** Hero */
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,4 +126,40 @@ img {
     padding: 1.5rem 2rem;
     border: none;
     max-width: 20rem;
+}
+
+/** Description */
+.description {
+    margin-top: 7rem;
+}
+.description__title {
+    text-align: center;
+    margin: 0;
+}
+.description__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 3rem;
+}
+.description__image {
+    width: 35rem;
+    grid-row: 1 / 4;
+}
+.feature {
+    padding: 0 2rem;
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+}
+
+.feature h4 {
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--primario);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.feature p{
+    font-size: 2rem;
 }
