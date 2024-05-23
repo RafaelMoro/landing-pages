@@ -72,3 +72,24 @@ img {
     }
 
 }
+@media (min-width: 768px) {
+    .header__nav a {
+        color: var(--blanco);
+    }
+}
+
+
+.bg-image {
+    background-image: url('./assets/header_bg.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 10rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        background-size: 50rem;
+    }
+    @media (min-width: 992px) {
+        background-size: 60rem;
+    }
+}
