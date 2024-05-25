@@ -45,6 +45,12 @@ button:hover {
     margin: 0 auto;
     width: 90%;
 }
+.bg-white {
+    background-color: var(--blanco);
+}
+.bg-primary {
+    background-color: var(--primario);
+}
 
 .header {
     display: flex;
@@ -213,4 +219,18 @@ button:hover {
 
 .feature p{
     font-size: 2rem;
+}
+
+.app-details {
+    margin: 10rem auto 10rem auto;
+    background-color: var(--primario);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 5rem;
+}
+.app-details h3 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--blanco);
 }
