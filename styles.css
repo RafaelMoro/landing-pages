@@ -48,9 +48,6 @@ button:hover {
 .bg-white {
     background-color: var(--blanco);
 }
-.bg-primary {
-    background-color: var(--primario);
-}
 
 .header {
     display: flex;
@@ -222,14 +219,40 @@ button:hover {
 }
 
 .app-details {
-    margin: 10rem auto 10rem auto;
     background-color: var(--primario);
+    position: relative;
+    margin: 10rem 0;
+    padding: 10rem 0;
+    overflow: hidden;
+}
+.app-details::before,
+.app-details::after {
+    content: '';
+    height: 20rem;
+    width: 120%;
+    background-color: var(--blanco);
+    position: absolute;
+}
+.app-details::before {
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+.app-details::after {
+    bottom: -10rem;
+    right: 0;
+    background-color: var(--blanco);
+    transform: rotate(3deg);
+}
+
+.app-details__box {
+    margin: 10rem auto 10rem auto;
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
+    justify-items: center;
     gap: 5rem;
 }
-.app-details h3 {
+.app-details__box h3 {
     font-size: 5rem;
     text-align: center;
     color: var(--blanco);
