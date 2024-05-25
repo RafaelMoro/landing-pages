@@ -276,3 +276,55 @@ button:hover {
         grid-row: 2 / 5;
     }
 }
+
+.comisions {
+    display: flex;
+    flex-direction: column;
+}
+.comisions h4 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 5rem;
+}
+.comisions__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.comisions__title-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.comisions__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.feature--comisions {
+    padding-top: 1rem;
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.feature .feature__porcent {
+    font-weight: 900;
+    color: var(--primario);
+    font-size: 6rem;
+    text-align: center;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        font-size: 4rem;
+    }
+}
