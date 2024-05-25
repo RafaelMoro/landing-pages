@@ -89,8 +89,8 @@ button:hover {
 .bg-image {
     background-image: url('./assets/header_bg.svg');
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 10rem;
+    background-position: right top; /* Definir donde posicionar la imagen.*/
+    background-size: 10rem; /* Definir tamaño de la imagen*/
     width: 100%;
 
     @media (min-width: 768px) {
