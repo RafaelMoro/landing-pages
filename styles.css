@@ -104,31 +104,59 @@ button:hover {
 /** Hero */
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-content: center;
+        gap: 0;
+    }
 }
 .hero__image {
-    width: 30rem;
-    justify-self: center;
+    width: 50rem;
+    @media (min-width: 768px) {
+        width: 30rem;
+        justify-self: center;
+    }
 }
 .hero__box-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 4rem;
+
+    @media (min-width: 768px) {
+        align-items: flex-start;
+    }
 }
 .hero__title {
-    margin: 0;
-    line-height: 1.2;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+        margin: 0;
+        line-height: 1.2;
+        text-align: left;
+        font-size: 5rem;
+    }
 }
 .hero__button {
     background-color: var(--primario);
     color: var(--blanco);
     padding: 1.5rem 2rem;
     border: none;
-    max-width: 20rem;
+    width: 100%;
+    
+    @media (min-width: 768px) {
+        max-width: 20rem;
+    }
 }
 
 /** Description */
