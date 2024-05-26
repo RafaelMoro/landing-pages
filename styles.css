@@ -335,6 +335,7 @@ button:hover {
 .testimonials {
     background-color: var(--primario);
     padding-top: 1rem;
+    padding-bottom: 5rem;
 }
 .testimonials__box {
     display: grid;
@@ -374,4 +375,22 @@ button:hover {
     color: var(--primario);
     text-align: right;
     font-weight: 700;
+}
+
+.footer {
+    background-color: #5A30A0;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer img {
+    width: 20rem;
+}
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.footer__nav a {
+    color: var(--blanco);
 }
