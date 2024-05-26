@@ -51,6 +51,9 @@ button:hover {
 .bg-primary {
     background-color: var(--primario);
 }
+.bg-primary--footer {
+    background-color: #5A30A0;
+}
 
 .header {
     display: flex;
