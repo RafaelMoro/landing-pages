@@ -48,6 +48,9 @@ button:hover {
 .bg-white {
     background-color: var(--blanco);
 }
+.bg-primary {
+    background-color: var(--primario);
+}
 
 .header {
     display: flex;
@@ -327,4 +330,48 @@ button:hover {
     @media (min-width: 768px) {
         font-size: 4rem;
     }
+}
+
+.testimonials {
+    background-color: var(--primario);
+    padding-top: 1rem;
+}
+.testimonials__box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.testimonials h4 {
+    color: var(--blanco);
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.testimonial {
+    background-color: var(--blanco);
+    padding: 2rem;
+    position: relative;
+}
+.testimonial__description {
+    padding-left: 3rem;
+}
+.testimonial__description::before {
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    background-image: url('./assets/comilla.png');
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+}
+.testimonial__author {
+    color: var(--primario);
+    text-align: right;
+    font-weight: 700;
 }
